@@ -1,0 +1,118 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(kl.jpg);
+	min-width: 100%;
+	min-height: 100%;
+	background-size: cover;
+	background-repeat:repeat-y;
+	z-index: -1;
+	overflow-x: hidden;
+	
+	
+	}
+	
+	h1{
+		text-transform: uppercase;
+		font-family: papyrus;
+		color: #fff;
+		text-align: center;
+	}
+
+	.center{
+	width: 1100px;
+	height: 500px;
+	background-color: rgba(251,251,252, 0.6);
+	margin-left: 230px;
+	margin-top: 30px;
+	position: relative;
+	bottom: 20px;
+
+}
+.center p{
+	color: #000;
+	font-size: 20px;
+	font-family: verdana;
+	margin-left: 20px;
+	}
+h2{
+		position: relative;
+		bottom: 120px;
+		text-align: center;
+		font-family: arial;
+	}
+.box{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.box span{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+@keyframes animate{
+	0%
+	{
+		opacity: 0;
+	}
+	50%
+	{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.videos{
+	display:block;
+	position: relative;
+	left: 180px;
+
+}
+.images{
+	margin-top: 30px;
+	margin-left: 180px;
+}
+.images img{
+	width: 300px;
+}
+@media only screen and (max-width: 992px){
+	h1{
+		font-size: 25px;
+	}
+	.center{
+		width: 80%;
+		height: 20%;
+		position: relative;
+		right: 210px;
+}
+	h2{
+		margin-top: 110px;
+		font-size: 15px;
+		position: relative;
+		right: 40px;
+	}
+	.box span{
+		position: relative;
+		top: 750px;
+
+	}
+	.videos{
+		position: relative;
+		right: 300px;
+		margin-top: 20px;
+
+	}
+	.images{
+		position: relative;
+		right: 150px;
+	}
